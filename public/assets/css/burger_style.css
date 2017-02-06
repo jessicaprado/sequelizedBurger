@@ -1,0 +1,96 @@
+body {
+	background-color: rgb(140, 218, 255);
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Amatic SC', cursive;
+	font-size: 96px;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+
+.notEaten {
+	width: 50%;
+	display: inline-block;
+	float: left;
+	text-align: left; 
+}
+
+.notEaten button {
+	display: inline;
+	float: right;
+	margin-left: 10px;
+	font-size: 20px;
+}
+
+.notEaten h4 {
+	display: inline;
+	float: right;
+	text-align: right;
+}
+
+.notEaten form {
+ 	display: inline;	
+}
+
+h4 {
+	font-family: 'Amatic SC', cursive;
+	font-size: 36px;
+}
+
+.eaten {
+	width: 35%;
+	position: relative;
+	display: inline;
+	float: left;
+	text-align: left;
+}
+
+form {
+  	position: relative; 
+  	width  : 500px;
+  	height : 50px;
+  	margin : 0 auto;
+}
+
+textarea {
+	position: relative; 
+	margin-left: auto;
+	margin-right: auto;
+	width  : 500px;
+  	height : 50px;
+}
+
+li {
+    list-style-type: none;
+}
+
+ .submit {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	font-family: 'Amatic SC', cursive;
+	font-size: 20px;
+} 
+
+.eat {
+	display: inline-block;
+}
+
+button {
+    background-color: #555555; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
