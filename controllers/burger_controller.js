@@ -3,26 +3,29 @@ var router = express.Router();
 var burger = require('./../models/burger.js');
 
 router.get('/', function(req, res){
-	burger.all(function(data){
-		var object = { burger: data }
-		//console.log(object);
-		res.render('index', object);
-	});
+    burger.findAll({}).then(function(data){
+		res.render('index', {
+			burger: data 
+		});
+    })
 });
 
 router.post('/create', function (req, res){
-	burger.create([req.body.burger, req.body.devoured], function (err, data){
-		if (err) throw err;
+	burger.create({
+		burger: req.body.burger, 
+		devoured: req.body.devoured
+	}).then(function (data){
     	res.redirect("/");
 	});
 });
 
+/*
 router.put('/update/:id', function(req, res) {
 	var condition = req.params.id;
 	console.log(condition);
 	burger.update(condition, function(){
 		res.redirect('/');
 	})
-})
+})*/
 
 module.exports = router;
