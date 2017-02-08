@@ -7,16 +7,9 @@ var burger = sequelize.define('burgers', {
 		type: Sequelize.INTEGER,
 		autoIncrement: true,
 		primaryKey: true,
-		validate: {
-			notNull: true
-		}, 
 	},
 	burger_name: {
 		type: Sequelize.STRING,
-		validate: {
-			notNull: true,
-			len: [1, 80] 
-		},
 	},
 	devoured: {
 		type: Sequelize.INTEGER,
